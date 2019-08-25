@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: Assistant, "Segoe UI", arial;
+  font-size: 29px;
+  background-color: #20a73d;
+  color: #000;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header .container {
+  height: 85px;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav {
+  font-family: "Secular One";
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+nav > a {
+  font-size: 27px;
+  padding: 21px 25px 18px;
+  border-bottom: 5px solid transparent;
+}
+
+nav > a:hover {
+  border-color: #000;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.social a {
+  font-family: "Secular One";
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+
+.video-container {
+  height: calc(100vh - 85px);
+  background-color: #000;
+}
+
+#act {
+  background-color: #f2f2f2;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: "Secular One";
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Secular One";
+  font-weight: bold;
+}
+
+form {
+  font-size: 16px;
+}
+
+.form-control {
+  border: 0;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 29px;
+  font-family: "Secular One";
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #404040 !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-secondary {
+  background-color: #20a73d;
+  border-color: #20a73d;
+  color: #000 !important;
+}
+
+.btn img {
+  width: 25px;
+  margin-left: 6px;
+  position: relative;
+  top: -3px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #25bc45 !important;
+}
+
+.form-check {
+  margin-top: 11px;
+}
+
+textarea {
+  height: 55px !important;
+}
+
+footer {
+  background-color: #000;
+  padding: 50px 0;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  line-height: 24px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer h3 {
+  border-bottom: 1px solid #919191;
+  padding-bottom: 9px;
+}
+
+footer .social {
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+footer .social a {
+  width: 37px;
+  height: 37px;
+}
+
+footer .btn {
+  font-size: 25px;
+}

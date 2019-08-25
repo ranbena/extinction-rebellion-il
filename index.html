@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="מכריזים על מצב חירום אקלימי.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Extinction Rebellion Israel - המרד בהכחדה ישראל">
+  <meta property="og:description" content="מכריזים על מצב חירום אקלימי.">
+  <meta property="og:url" content="https://xrebellionisrael.earth">
+  <meta property="og:site_name" content="Extinction Rebellion Israel - המרד בהכחדה ישראל">
+  
+  <meta property="og:image" content="https://xrebellionisrael.earth/img/og.jpg">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1200">
+  
+  <title>Extinction Rebellion Israel - המרד בהכחדה ישראל</title>
+  
+  <link rel="shortcut icon" href="favicon.png">
+  
+  <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:400,600,700&display=swap&subset=hebrew">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular+One">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css" media="(max-width: 575px)" />
+  
+  <script>
+    function onInputChange(input) {
+      console.log('??');
+      input.setCustomValidity(""); 
+    }
+    function onInputInvalid(input) {
+      console.log('!!');
+      if(input.validity.valueMissing){
+        input.setCustomValidity("אין להשאיר שדה זה ריק"); 
+      } else if(input.validity.typeMismatch) {
+        input.setCustomValidity("כתובת האימייל אינה רשומה נכון"); 
+      } 
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container d-flex align-items-center">
+      <a class="logo" href="/">
+        <img src="img/logo.svg" alt="logo" />
+      </a>
+      <nav>
+        <a href="#act">הזמן לפעול</a>
+        <a href="#join">הצטרפו למרד</a>
+        <div class="social">
+          <a href="https://www.facebook.com/XRisrael/" target="_blank"><img src="img/facebook.svg" alt="Facebook" /></a>
+          <a href="https://twitter.com/ExtinctionR" target="_blank"><img src="img/twitter.svg" alt="Twitter" /></a>
+          <a href="https://www.instagram.com/extinctionrebellion/" target="_blank"><img src="img/instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.youtube.com/channel/UCYThdLKE6TDwBJh-qDC6ICA" target="_blank"><img src="img/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="video-container">
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FXRisrael%2Fvideos%2F458857841561396%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+  </div>
+  <section id="act">
+    <div class="container">
+      <h2>הזמן לפעול הוא עכשיו</h2>
+      <p>
+        איננו מוכנים לסכנות הקיומיות שהעתיד טומן לנו. אנו עומדים בפני הצפות, שריפות, מזג אוויר קיצוני, בצורות, כשלון יבולים, רעב, הגירה עולמית המונית, והתמוטטות החברה כפי שאנו מכירים אותה. הזמן להכחשה והתעלמות נגמר. הזמן לפעול הוא עכשיו.
+        <br /><br />
+        גישות מסורתיות של הצבעה, לובינג, עצומות והפגנות נכשלו בגלל שכוחות פוליטיים וכלכליים עצומים מונעים שינוי. לכן, האסטרטגיה שלנו היא אי-ציות אזרחי לא אלים אך משבש – הפתרון היחידי הוא מרד.
+        <br /><br />
+        ראיות היסטוריות מצביעות על כך שאנו זקוקים למעורבות של 3.5% מהאוכלוסיה כדי להצליח – בישראל פרוש הדבר כ 300,000 אנשים בלבד.
+      </p>
+    </div>
+  </section>
+  <section class="container" id="join">
+    <h2>הצטרפו למרד</h2>
+    <form method="post" action="/mail.php">
+      <div class="row form-group">
+        <div class="col">
+          <input class="form-control" type="text" name="cf_name" placeholder="שם/כינוי" required oninvalid="onInputInvalid(this)" onkeyup="onInputChange(this)">
+        </div>
+        <div class="col">
+          <input class="form-control" type="email" name="cf_email" placeholder="אימייל" required oninvalid="onInputInvalid(this)" onkeyup="onInputChange(this)">
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col">
+          <input class="form-control" type="tel" name="cf_phone" placeholder="טלפון">
+        </div>
+        <div class="col">
+          <input class="form-control" type="text" name="cf_city" placeholder="יישוב">
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col">
+          <textarea class="form-control" name="cf_skills" placeholder="מהם הכישורים שלך? איך את/ה יכול לעזור למרד בהכחדה?"></textarea>
+        </div>
+        <div class="col">
+          <input type="hidden" name="cf_language" id="cf_language" value="en">
+          <button type="submit" class="btn btn-primary form-control">הצטרפו</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cf_consent" name="cf_consent" checked>
+            <label class="form-check-label" for="cf_consent">אני מאשר למרד בהכחדה ישראל ליצור איתי קשר באמצעות המידע שסיפקתי בטופס זה.</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>קישורים</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/XRisrael/">העמוד בפייסבוק</a></li>
+            <li><a href="https://www.facebook.com/groups/379482256190825">הקבוצה בפייסבוק</a></li>
+            <li><a href="https://www.facebook.com/pg/XRisrael/events">אירועים ומפגשים</a></li>
+            <li><a href="https://rebellion.earth">אתר הארגון העולמי</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3 d-flex justify-content-end">
+          <ul class="w-100">
+            <li><a class="btn btn-secondary" href="https://m.me/XRisrael?fbclid=IwAR0VwrDNNx1TVWcP_-4qdiRxqv0b5MyF6lK__dKhyT6aQqdhyMStlCbtgXc" target="_blank">
+              <img src="img/messenger.svg" alt="מסנג׳ר" />דברו איתנו במסנג׳ר
+            </a></li>
+            <li>
+              <div class="social">
+                <a href="https://www.facebook.com/XRisrael/" target="_blank"><img src="img/facebook-inverted.svg" alt="Facebook" /></a>
+                <a href="https://twitter.com/ExtinctionR" target="_blank"><img src="img/twitter-inverted.svg" alt="Twitter" /></a>
+                <a href="https://www.instagram.com/extinctionrebellion/" target="_blank"><img src="img/instagram-inverted.svg" alt="Instagram" /></a>
+                <a href="https://www.youtube.com/channel/UCYThdLKE6TDwBJh-qDC6ICA" target="_blank"><img src="img/youtube-inverted.svg" alt="YouTube" /></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
